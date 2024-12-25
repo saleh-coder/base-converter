@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Ensures compatibility with Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the page responsive on different screen sizes -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Base Converter</title>
+  </head>
+  <body>
+    <div class="header">
+      <!-- Container for the header section -->
+      <h1 class="title">Base Converter</h1>
+      <h2 class="caption">
+        Select the bases, enter a number, and click "Convert".
+      </h2>
+    </div>
+    <div class="selectors">
+      <!-- Container for the base selection elements -->
+      <label for="from-base-select">From:</label>
+      <!-- Label for the first dropdown -->
+      <select id="from-base-select" class="input">
+        <!-- Dropdown to select the current base -->
+        <option>Binary</option>
+        <option>Octal</option>
+        <option>Hexadecimal</option>
+        <option>Decimal</option>
+      </select>
+
+      <label for="to-base-select">To:</label>
+      <!-- Label for the second dropdown -->
+      <select id="to-base-select" class="input">
+        <!-- Dropdown to select the target base -->
+        <option>Binary</option>
+        <option>Octal</option>
+        <option>Hexadecimal</option>
+        <option>Decimal</option>
+      </select>
+    </div>
+
+    <input id="number-input" class="input" placeholder="Enter a number" />
+    <!-- Input field for the user to type a number -->
+    <button id="convert-button">Convert</button>
+    <!-- Button to trigger the base conversion -->
+
+    <div id="result-display">Result</div>
+    <!-- Div to display the conversion result -->
+    <script src="script.js"></script>
+    <!-- Links an external JavaScript file to handle functionality -->
+  </body>
+</html>

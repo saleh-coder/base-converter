@@ -1,0 +1,123 @@
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Header section */
+.header {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  font-size: 1.2rem;
+  color: #f9f9f9;
+  opacity: 0.9;
+}
+
+/* Selectors and input */
+.selectors {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.input,
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  color: #333;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.input:focus,
+select:focus {
+  outline: none;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styles */
+#convert-button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  margin-top: 15px; /* Adiciona um espaçamento superior ao botão */
+}
+
+#convert-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#convert-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Result display */
+#result-display {
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #27ae60;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+#result-display:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .selectors {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #convert-button {
+    width: 100%; /* Faz o botão ocupar toda a largura em dispositivos móveis */
+    max-width: 300px; /* Limita a largura máxima em telas grandes */
+  }
+}
